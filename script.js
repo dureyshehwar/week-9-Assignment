@@ -33,8 +33,8 @@
  * An Array to store all the cards suits
  * 
  */
-
 class Deck{
+
     constructor(){
        this.deck= [];
        this.ranks=[

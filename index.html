@@ -4,11 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> War Card Game</title>
-  
+    <link rel="stylesheet" href="node_modules/mocha/mocha.css"/>
 </head>
 <body>
-    <H1>"Week 9 Assignment"</H1>
-    <H2>"War Card Game"</H2>   
-    <script src="script.js"></script> 
+    <div id="mocha">
+        <p>
+        <a href=".">Index</a>
+        </p>
+        </div>
+        <div id="messages"></div>
+        <div id="fixtures"></div>
+        <script src="node_modules/mocha/mocha.js"></script>
+        <script src="node_modules/chai/chai.js"></script>
+        <script src="script.js"></script> <!-- YOUR FILENAME FOR YOUR MAIN PROJECT FILE in the src= -->
+        <script>mocha.setup('bdd')</script>
+        <script src="script.test.js"></script> <!-- YOUR FILENAME FOR YOUR TESTING FILE in the src= -->
+        <script>mocha.run();</script>
 </body>
 </html>
